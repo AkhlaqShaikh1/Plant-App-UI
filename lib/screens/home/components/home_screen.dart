@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:plantapp_ui/screens/home/components/body.dart';
+import 'package:plantapp_ui/screens/home/constants.dart';
+
+import '../../../components/bottom_nav_bar.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -10,6 +13,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: buildAppBar(context),
       body: const Body(),
+      bottomNavigationBar: const BottomNavBar(),
     );
   }
 
